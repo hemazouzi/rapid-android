@@ -210,6 +210,9 @@ public class DFE {
 
         mDSE = DSE.getInstance(this.mAppName);
 
+        if(config == null)
+            config = new Configuration();
+
         config.setClone(sClone);
         netProfiler = new NetworkProfiler(mContext, config);
         start();
@@ -255,7 +258,7 @@ public class DFE {
         // local variable increases performance by 25 percent according to
         // Joshua Bloch "Effective Java, Second Edition", p. 283-284
         DFE result = instance;
-
+        Log.e("LOLOMO", clone.toString());
         synchronized (DFE.class) {
             if (result == null) {
                 result = instance;

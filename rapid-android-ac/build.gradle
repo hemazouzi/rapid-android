@@ -26,11 +26,9 @@ ext {
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "25.0.3"
+    buildToolsVersion '28.0.2'
 
     defaultConfig {
-        minSdkVersion 19
-        targetSdkVersion 26
     }
 
     buildTypes {
@@ -47,9 +45,9 @@ android {
 }
 
 dependencies {
-    compile 'eu.project.rapid:rapid-common:0.1.2'
+    implementation 'eu.project.rapid:rapid-common:0.1.2'
     //    compile project(':rapid-common')
-    compile 'com.nabinbhandari.android:permissions:3.5'
+    implementation'com.nabinbhandari.android:permissions:3.5'
 }
 
 // Place it at the end of the file
